@@ -1,0 +1,3 @@
+## 2025-05-14 - [Dynamic Staggered Animation & Keyboard Accessibility]
+**Learning:** Hardcoding staggered animations with CSS `nth-child` is fragile and limits the effect to a specific character count. Moving this logic to JavaScript using inline `animation-delay` ensures the UX enhancement works for text of any length while keeping the code maintainable. Additionally, adding `:focus-visible` styles is a non-intrusive way to provide necessary visual feedback for keyboard users.
+**Action:** Use JS for character-based staggered animations in dynamic text and always pair navigation elements with `:focus-visible` states.
