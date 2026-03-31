@@ -37,6 +37,11 @@ body {
     text-decoration: none;
     color: #ffffff;
   }
+  .logo a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
   
   .menu ul {
     list-style: none;
@@ -50,6 +55,11 @@ body {
   .menu ul li a{
     text-decoration: none;
     color: #ffffff;
+  }
+  .item a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+    border-radius: 2px;
   }
   /* Add CSS styles for the animation */
 .logo a {
@@ -77,8 +87,9 @@ body {
     }
   }
   
-  /* Apply the animation on hover */
-  .logo a:hover span {
+  /* Apply the animation on hover and focus */
+  .logo a:hover span,
+  .logo a:focus-visible span {
     animation: showlogoLetters 0.2s ease forwards; /* Play animation on hover and keep the final state */
   }
   
@@ -123,8 +134,9 @@ body {
     }
   }
   
-  /* Apply the animation on hover */
-  .item a:hover span {
+  /* Apply the animation on hover and focus */
+  .item a:hover span,
+  .item a:focus-visible span {
     animation: showLetters 0.2s ease forwards; /* Play animation on hover and keep the final state */
   }
   
