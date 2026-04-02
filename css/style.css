@@ -77,9 +77,16 @@ body {
     }
   }
   
-  /* Apply the animation on hover */
-  .logo a:hover span {
+  /* Apply the animation on hover and focus */
+  .logo a:hover span,
+  .logo a:focus-visible span {
     animation: showlogoLetters 0.2s ease forwards; /* Play animation on hover and keep the final state */
+  }
+
+  .logo a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+    border-radius: 2px;
   }
   
   /* Staggered animation delay for each span */
@@ -123,9 +130,16 @@ body {
     }
   }
   
-  /* Apply the animation on hover */
-  .item a:hover span {
+  /* Apply the animation on hover and focus */
+  .item a:hover span,
+  .item a:focus-visible span {
     animation: showLetters 0.2s ease forwards; /* Play animation on hover and keep the final state */
+  }
+
+  .item a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+    border-radius: 2px;
   }
   
   /* Staggered animation delay for each span */
@@ -164,7 +178,6 @@ body {
     border: 1px solid #ffffff;
     background:#000000;
     margin-bottom: 30px;
-    cursor: pointer;
     position: relative; /* Add position relative to the h1 element */
   }
   
