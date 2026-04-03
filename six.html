@@ -148,8 +148,11 @@
         
         function wrapCharacters(element) {
           const text = element.innerText;
+          if (!element.hasAttribute("aria-label")) {
+            element.setAttribute("aria-label", text);
+          }
           const characters = text.split("");
-          const wrappedText = characters.map(char => `<span>${char}</span>`).join("");
+          const wrappedText = characters.map(char => `<span aria-hidden="true">${char}</span>`).join("");
           element.innerHTML = wrappedText;
         }
         

@@ -1,0 +1,3 @@
+## 2026-04-03 - [Accessibility for Fragmented Text Animations]
+**Learning:** Text-based animations that split content into individual characters (e.g., wrapping each letter in a `<span>`) can degrade screen reader performance by announcing characters one by one. Always use `aria-label` on the parent interactive element to provide the full text to screen readers, and apply `aria-hidden="true"` to the individual character spans. Additionally, ensure animations are mirrored for keyboard navigation by using `:focus-visible` in tandem with `:hover`.
+**Action:** Automatically apply `aria-label` and `aria-hidden` in character-wrapping scripts, and pair hover animations with focus-visible triggers.
