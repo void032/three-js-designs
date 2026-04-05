@@ -50,6 +50,12 @@ body {
   .menu ul li a{
     text-decoration: none;
     color: #ffffff;
+    border-radius: 4px;
+    padding: 2px 4px;
+  }
+  .menu ul li a:focus-visible, .logo a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
   }
   /* Add CSS styles for the animation */
 .logo a {
@@ -164,7 +170,6 @@ body {
     border: 1px solid #ffffff;
     background:#000000;
     margin-bottom: 30px;
-    cursor: pointer;
     position: relative; /* Add position relative to the h1 element */
   }
   
