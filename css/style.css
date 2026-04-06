@@ -142,6 +142,14 @@ body {
   }
   
   /* Add more nth-child styles for additional letters as needed */
+
+  .logo a:focus-visible,
+  .item a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
+
   .center-section{
     position: relative;
     top: 180px;
@@ -164,7 +172,6 @@ body {
     border: 1px solid #ffffff;
     background:#000000;
     margin-bottom: 30px;
-    cursor: pointer;
     position: relative; /* Add position relative to the h1 element */
   }
   
