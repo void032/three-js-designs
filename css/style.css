@@ -37,6 +37,11 @@ body {
     text-decoration: none;
     color: #ffffff;
   }
+  .menu ul li a:focus-visible,
+  .logo a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+  }
   
   .menu ul {
     list-style: none;
@@ -164,7 +169,6 @@ body {
     border: 1px solid #ffffff;
     background:#000000;
     margin-bottom: 30px;
-    cursor: pointer;
     position: relative; /* Add position relative to the h1 element */
   }
   
