@@ -22,14 +22,14 @@
   <body>
     <div class="nav">
       <div class="logo">
-        <a href="#">Planets</a>
+        <a href="#" aria-label="Planets">Planets</a>
       </div>
       <div class="menu">
           <ul>
-            <li class="item"><a href="#">Home</a></li>
-            <li class="item"><a href="#">About</a></li>
-            <li class="item"><a href="#">Explore</a></li>
-            <li class="item"><a href="#">Contact.</a></li>
+            <li class="item"><a href="#" aria-label="Home">Home</a></li>
+            <li class="item"><a href="#" aria-label="About">About</a></li>
+            <li class="item"><a href="#" aria-label="Explore">Explore</a></li>
+            <li class="item"><a href="#" aria-label="Contact">Contact.</a></li>
           </ul>
       </div>
     </div>
@@ -149,7 +149,7 @@
         function wrapCharacters(element) {
           const text = element.innerText;
           const characters = text.split("");
-          const wrappedText = characters.map(char => `<span>${char}</span>`).join("");
+          const wrappedText = characters.map(char => `<span aria-hidden="true">${char}</span>`).join("");
           element.innerHTML = wrappedText;
         }
         
