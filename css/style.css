@@ -51,6 +51,13 @@ body {
     text-decoration: none;
     color: #ffffff;
   }
+
+  .logo a:focus-visible,
+  .item a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+  }
+
   /* Add CSS styles for the animation */
 .logo a {
     position: relative;
@@ -164,7 +171,6 @@ body {
     border: 1px solid #ffffff;
     background:#000000;
     margin-bottom: 30px;
-    cursor: pointer;
     position: relative; /* Add position relative to the h1 element */
   }
   
