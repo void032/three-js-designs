@@ -99,13 +99,14 @@ body {
     }
   }
   
-  /* Apply the animation on hover */
+  /* Apply the animation on hover and focus-visible */
   .logo a:hover span,
   .logo a:focus-visible span {
     animation: showlogoLetters 0.2s ease forwards; /* Play animation on hover and keep the final state */
   }
 
-  .logo a:focus-visible {
+  .logo a:focus-visible,
+  .item a:focus-visible {
     outline: 2px solid #ffffff;
     outline-offset: 4px;
   }
@@ -146,7 +147,7 @@ body {
     }
   }
   
-  /* Apply the animation on hover */
+  /* Apply the animation on hover and focus-visible */
   .item a:hover span,
   .item a:focus-visible span {
     animation: showLetters 0.2s ease forwards; /* Play animation on hover and keep the final state */
