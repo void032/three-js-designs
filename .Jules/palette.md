@@ -1,3 +1,3 @@
-## 2025-05-15 - [Accessibility for Animated Text and Interactive Affordance]
-**Learning:** Fragmenting text into individual spans for animations (like the `wrapCharacters` function) causes screen readers to announce characters one-by-one, significantly degrading accessibility. Additionally, using `cursor: pointer` on non-interactive elements like `h1` creates a false affordance that confuses users.
-**Action:** Always wrap character-fragmented text with an `aria-label` on the parent and `aria-hidden="true"` on the individual spans. Ensure `cursor: pointer` is only used on truly interactive elements, and always provide `:focus-visible` styles for keyboard parity in dark-themed interfaces.
+## 2025-05-14 - [Accessible Text Fragmenting]
+**Learning:** Text-fragmenting animations (wrapping characters in <span> for staggered effects) cause screen readers to read text letter-by-letter, breaking the user experience.
+**Action:** Always pair character-level animations with `aria-label` on the parent container and `aria-hidden="true"` on the individual character spans.
