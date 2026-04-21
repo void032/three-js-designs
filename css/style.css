@@ -10,6 +10,10 @@ body {
     /*font-family: 'Noto Sans', sans-serif;*/
     font-family: 'Orbitron', sans-serif;
   }
+  :focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+  }
   canvas {
     position: absolute; /* Position the canvas absolutely within the wrapper container */
     top: 0;
@@ -43,6 +47,12 @@ body {
     outline-offset: 4px;
   }
   
+  .menu ul li a:focus-visible,
+  .logo a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+  }
+
   .menu ul {
     list-style: none;
     display: flex; 
@@ -55,7 +65,30 @@ body {
   .menu ul li a{
     text-decoration: none;
     color: #ffffff;
+    border-radius: 4px;
+    padding: 2px 4px;
   }
+  .menu ul li a:focus-visible, .logo a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+  }
+  .item a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
+
+  a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+  }
+
+  .logo a:focus-visible,
+  .item a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+  }
+
   /* Add CSS styles for the animation */
 .logo a {
     position: relative;
@@ -82,8 +115,9 @@ body {
     }
   }
   
-  /* Apply the animation on hover */
-  .logo a:hover span {
+  /* Apply the animation on hover and focus */
+  .logo a:hover span,
+  .logo a:focus-visible span {
     animation: showlogoLetters 0.2s ease forwards; /* Play animation on hover and keep the final state */
   }
   
@@ -96,11 +130,6 @@ body {
     animation-delay: 50ms; /* Delay the appearance of the second span by 50ms */
   }
   
-  .logo a span:nth-child(3) {
-    animation-delay: 100ms; /* Delay the appearance of the third span by 100ms */
-  }
-  
-  /* Add more nth-child styles for additional letters as needed */
   
 /* Add CSS styles for the animation */
 .item a {
@@ -128,8 +157,9 @@ body {
     }
   }
   
-  /* Apply the animation on hover */
-  .item a:hover span {
+  /* Apply the animation on hover and focus */
+  .item a:hover span,
+  .item a:focus-visible span {
     animation: showLetters 0.2s ease forwards; /* Play animation on hover and keep the final state */
   }
   
@@ -147,6 +177,14 @@ body {
   }
   
   /* Add more nth-child styles for additional letters as needed */
+
+  .logo a:focus-visible,
+  .item a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
+
   .center-section{
     position: relative;
     top: 180px;
@@ -192,6 +230,12 @@ body {
   .center-text h1::after {
     filter: blur(10px);
   }
+
+  a:focus-visible {
+    outline: 2px solid #C3F2FF;
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
   
   @keyframes rotate {
     0% {
@@ -201,4 +245,9 @@ body {
       --angle: 360deg;
     }
   }
-  
+
+.logo a:focus-visible,
+.menu ul li a:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 4px;
+}
