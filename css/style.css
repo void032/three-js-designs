@@ -43,6 +43,12 @@ body {
     border-radius: 2px;
   }
   
+  .menu ul li a:focus-visible,
+  .logo a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+  }
+
   .menu ul {
     list-style: none;
     display: flex; 
@@ -102,11 +108,6 @@ body {
     animation-delay: 50ms; /* Delay the appearance of the second span by 50ms */
   }
   
-  .logo a span:nth-child(3) {
-    animation-delay: 100ms; /* Delay the appearance of the third span by 100ms */
-  }
-  
-  /* Add more nth-child styles for additional letters as needed */
   
 /* Add CSS styles for the animation */
 .item a {
@@ -153,7 +154,6 @@ body {
     animation-delay: 100ms; /* Delay the appearance of the third span by 100ms */
   }
   
-  /* Add more nth-child styles for additional letters as needed */
   .center-section{
     position: relative;
     top: 180px;
@@ -176,7 +176,6 @@ body {
     border: 1px solid #ffffff;
     background:#000000;
     margin-bottom: 30px;
-    cursor: pointer;
     position: relative; /* Add position relative to the h1 element */
   }
   
