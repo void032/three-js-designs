@@ -44,8 +44,8 @@ body {
     outline-offset: 4px;
   }
   
-  .logo a:focus-visible,
-  .menu ul li a:focus-visible {
+  .menu ul li a:focus-visible,
+  .logo a:focus-visible {
     outline: 2px solid #ffffff;
     outline-offset: 4px;
   }
