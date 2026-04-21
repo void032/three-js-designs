@@ -1,3 +1,3 @@
-## 2025-05-14 - [Accessible Text Fragmenting]
-**Learning:** Text-fragmenting animations (wrapping characters in <span> for staggered effects) cause screen readers to read text letter-by-letter, breaking the user experience.
-**Action:** Always pair character-level animations with `aria-label` on the parent container and `aria-hidden="true"` on the individual character spans.
+## 2025-05-15 - [Accessible Animated Text]
+**Learning:** Text split into spans for animation (e.g., via a `wrapCharacters` function) is often read character-by-character by screen readers, making it unintelligible.
+**Action:** Always apply `aria-label` with the full text to the parent element and `aria-hidden="true"` to the individual character spans. Pair this with `:focus-visible` styles to ensure keyboard accessibility matches hover effects.
