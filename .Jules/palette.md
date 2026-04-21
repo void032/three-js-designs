@@ -1,3 +1,3 @@
-## 2026-04-13 - [Text Fragmentation Accessibility]
-**Learning:** Animated text that is fragmented into individual spans for character-based effects (like the wrapCharacters function) is read letter-by-letter by screen readers, creating a poor experience.
-**Action:** Always apply aria-label to the parent element containing the full text and aria-hidden="true" to the individual character spans to ensure screen reader clarity while maintaining visual effects.
+## 2025-04-14 - Accessible Character-Split Animations
+**Learning:** Text-splitting animations for hover effects (like character staggering) can break screen reader announcements by splitting words into individual characters, and they often exclude keyboard users by only triggering on hover.
+**Action:** Always pair character-split animations with an `aria-label` on the parent interactive element and `aria-hidden="true"` on the individual character spans. Additionally, always mirror `:hover` animation triggers with `:focus-visible` to ensure keyboard accessibility.
