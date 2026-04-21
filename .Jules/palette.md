@@ -1,7 +1,3 @@
-## 2025-05-14 - Accessible Text Animations
-**Learning:** For text-based animations that fragment content (e.g., wrapping characters in spans), use `aria-label` on the parent interactive element and `aria-hidden="true"` on the individual spans to preserve screen reader clarity.
-**Action:** Always pair character-level animations with a full-string `aria-label` and hide the animated fragments from screen readers.
-
-## 2025-05-14 - Semantic Navigation and Keyboard Focus
-**Learning:** Simple changes like converting a `div` to a `<nav>` element and adding `:focus-visible` styles significantly improve accessibility for assistive technologies and keyboard users with minimal code changes.
-**Action:** Prioritize semantic HTML tags and ensure visible focus states for all interactive elements.
+## 2026-04-06 - [Accessible character-based animations]
+**Learning:** Text-based animations that fragment content into spans (e.g., for staggering effects) can break screen reader clarity as they may read each character individually.
+**Action:** Use `aria-label` on the parent interactive element to provide the full text and `aria-hidden="true"` on the individual spans to hide the fragmented characters from assistive technologies.

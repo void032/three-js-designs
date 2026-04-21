@@ -173,6 +173,15 @@ body {
     animation-delay: 100ms; /* Delay the appearance of the third span by 100ms */
   }
   
+  /* Add more nth-child styles for additional letters as needed */
+
+  .logo a:focus-visible,
+  .item a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
+
   .center-section{
     position: relative;
     top: 180px;
