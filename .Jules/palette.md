@@ -1,3 +1,3 @@
-## 2025-05-14 - [A11y for Text Fragmentation]
-**Learning:** Fragmenting text into spans for animation (e.g., character-by-character effects) breaks screen reader clarity by treating each character as a separate entity. Always use `aria-label` on the parent interactive element to preserve the full text and set `aria-hidden="true"` on the individual character spans. Additionally, hover animations must always have a `:focus-visible` counterpart for keyboard accessibility.
-**Action:** Automatically apply `aria-label` and `aria-hidden` when using character fragmentation scripts and ensure `:focus-visible` triggers are included in CSS.
+## 2026-04-02 - Fragmented Text Accessibility
+**Learning:** Animating text by wrapping individual characters in `<span>` tags causes screen readers to announce the word letter-by-letter, breaking the user experience for visually impaired users.
+**Action:** Always set an `aria-label` with the full text on the parent interactive element and add `aria-hidden="true"` to the individual character spans to ensure the word is read correctly as a single unit.
