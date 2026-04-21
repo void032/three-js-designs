@@ -4,11 +4,7 @@
     <meta charset="UTF-8">
     <title>Three.js Metallic Ball</title>
     <link rel="stylesheet" href="css/style.css">
-    <script async src="https://unpkg.com/
-    
-    
-    
-    es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
     <script type="importmap">
       {
         "imports": {
@@ -22,14 +18,14 @@
   <body>
     <nav class="nav" aria-label="Main Navigation">
       <div class="logo">
-        <a href="#">Planets</a>
+        <a href="#" aria-label="Planets">Planets</a>
       </div>
       <div class="menu">
-          <ul>
-            <li class="item"><a href="#">Home</a></li>
-            <li class="item"><a href="#">About</a></li>
-            <li class="item"><a href="#">Explore</a></li>
-            <li class="item"><a href="#">Contact.</a></li>
+          <ul role="list">
+            <li class="item"><a href="#" aria-label="Home">Home</a></li>
+            <li class="item"><a href="#" aria-label="About">About</a></li>
+            <li class="item"><a href="#" aria-label="Explore">Explore</a></li>
+            <li class="item"><a href="#" aria-label="Contact">Contact.</a></li>
           </ul>
       </div>
     </nav>
@@ -152,6 +148,7 @@
           const characters = text.split("");
           const wrappedText = characters.map(char => `<span aria-hidden="true">${char}</span>`).join("");
           element.innerHTML = wrappedText;
+          element.setAttribute("aria-label", text);
         }
         
       </script>
