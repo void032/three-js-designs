@@ -1,3 +1,7 @@
-## 2026-04-06 - [Accessible character-based animations]
-**Learning:** Text-based animations that fragment content into spans (e.g., for staggering effects) can break screen reader clarity as they may read each character individually.
-**Action:** Use `aria-label` on the parent interactive element to provide the full text and `aria-hidden="true"` on the individual spans to hide the fragmented characters from assistive technologies.
+## 2026-04-07 - Staggered text animations and accessibility
+**Learning:** Fragmenting text into individual spans for animation causes screen readers to read words character-by-character. Additionally, these animations are often only triggered on `:hover`, excluding keyboard users.
+**Action:** Use `aria-label` on the parent interactive element and `aria-hidden="true"` on the individual character spans. Always pair `:hover` triggers with `:focus-visible` in CSS.
+
+## 2026-04-07 - Misleading Interactivity
+**Learning:** Using `cursor: pointer` on non-interactive elements like headings can confuse users by falsely implying clickability.
+**Action:** Only use `cursor: pointer` for genuinely interactive elements (links, buttons, etc.) and remove it from purely decorative or informative elements.
