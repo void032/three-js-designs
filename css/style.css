@@ -99,7 +99,7 @@ body {
     }
   }
   
-  /* Apply the animation on hover and focus-visible */
+  /* Apply the animation on hover and focus */
   .logo a:hover span,
   .logo a:focus-visible span {
     animation: showlogoLetters 0.2s ease forwards; /* Play animation on hover and keep the final state */
@@ -147,7 +147,7 @@ body {
     }
   }
   
-  /* Apply the animation on hover and focus-visible */
+  /* Apply the animation on hover and focus */
   .item a:hover span,
   .item a:focus-visible span {
     animation: showLetters 0.2s ease forwards; /* Play animation on hover and keep the final state */
