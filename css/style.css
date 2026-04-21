@@ -248,4 +248,9 @@ body {
       --angle: 360deg;
     }
   }
-  
+
+.logo a:focus-visible,
+.menu ul li a:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 4px;
+}

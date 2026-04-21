@@ -16,7 +16,7 @@
   </head>
 
   <body>
-    <nav class="nav">
+    <nav class="nav" aria-label="Main Navigation">
       <div class="logo">
         <a href="#" aria-label="Planets">Planets</a>
       </div>
@@ -144,7 +144,7 @@
         
         function wrapCharacters(element) {
           const text = element.innerText;
-          element.setAttribute("aria-label", text);
+          element.setAttribute('aria-label', text);
           const characters = text.split("");
           const wrappedText = characters.map(char => `<span aria-hidden="true">${char}</span>`).join("");
           element.innerHTML = wrappedText;

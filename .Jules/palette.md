@@ -1,3 +1,3 @@
-## 2025-04-14 - Accessible Character-Split Animations
-**Learning:** Text-splitting animations for hover effects (like character staggering) can break screen reader announcements by splitting words into individual characters, and they often exclude keyboard users by only triggering on hover.
-**Action:** Always pair character-split animations with an `aria-label` on the parent interactive element and `aria-hidden="true"` on the individual character spans. Additionally, always mirror `:hover` animation triggers with `:focus-visible` to ensure keyboard accessibility.
+## 2025-05-15 - [Accessibility for Animated Text and Interactive Affordance]
+**Learning:** Fragmenting text into individual spans for animations (like the `wrapCharacters` function) causes screen readers to announce characters one-by-one, significantly degrading accessibility. Additionally, using `cursor: pointer` on non-interactive elements like `h1` creates a false affordance that confuses users.
+**Action:** Always wrap character-fragmented text with an `aria-label` on the parent and `aria-hidden="true"` on the individual spans. Ensure `cursor: pointer` is only used on truly interactive elements, and always provide `:focus-visible` styles for keyboard parity in dark-themed interfaces.
