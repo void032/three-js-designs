@@ -1,3 +1,3 @@
-## 2025-03-31 - [Keyboard Animation Consistency]
-**Learning:** Animations triggered only on `:hover` exclude keyboard users from the "delightful" parts of the UX. Using `:focus-visible` to trigger the same animations ensures a consistent experience across input methods.
-**Action:** Always pair `:hover` animation triggers with `:focus-visible` to maintain parity between mouse and keyboard interactions.
+## 2025-05-14 - [A11y for Text Fragmentation]
+**Learning:** Fragmenting text into spans for animation (e.g., character-by-character effects) breaks screen reader clarity by treating each character as a separate entity. Always use `aria-label` on the parent interactive element to preserve the full text and set `aria-hidden="true"` on the individual character spans. Additionally, hover animations must always have a `:focus-visible` counterpart for keyboard accessibility.
+**Action:** Automatically apply `aria-label` and `aria-hidden` when using character fragmentation scripts and ensure `:focus-visible` triggers are included in CSS.
