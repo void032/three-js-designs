@@ -37,6 +37,12 @@ body {
     text-decoration: none;
     color: #ffffff;
   }
+
+  .menu ul li a:focus-visible,
+  .logo a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+  }
   
   .logo a:focus-visible,
   .menu ul li a:focus-visible {
@@ -56,6 +62,12 @@ body {
   .menu ul li a{
     text-decoration: none;
     color: #ffffff;
+  }
+  .logo a:focus-visible,
+  .menu ul li a:focus-visible {
+    outline: 2px solid #C3F2FF;
+    outline-offset: 4px;
+    border-radius: 4px;
   }
   /* Add CSS styles for the animation */
 .logo a {
@@ -89,20 +101,6 @@ body {
     animation: showlogoLetters 0.2s ease forwards; /* Play animation on hover/focus and keep the final state */
   }
   
-  /* Staggered animation delay for each span */
-  .logo a span:nth-child(1) {
-    animation-delay: 0ms; /* No delay for the first span */
-  }
-  
-  .logo a span:nth-child(2) {
-    animation-delay: 50ms; /* Delay the appearance of the second span by 50ms */
-  }
-  
-  .logo a span:nth-child(3) {
-    animation-delay: 100ms; /* Delay the appearance of the third span by 100ms */
-  }
-  
-  /* Add more nth-child styles for additional letters as needed */
   
 /* Add CSS styles for the animation */
 .item a {
@@ -136,20 +134,6 @@ body {
     animation: showLetters 0.2s ease forwards; /* Play animation on hover/focus and keep the final state */
   }
   
-  /* Staggered animation delay for each span */
-  .item a span:nth-child(1) {
-    animation-delay: 0ms; /* No delay for the first span */
-  }
-  
-  .item a span:nth-child(2) {
-    animation-delay: 50ms; /* Delay the appearance of the second span by 50ms */
-  }
-  
-  .item a span:nth-child(3) {
-    animation-delay: 100ms; /* Delay the appearance of the third span by 100ms */
-  }
-  
-  /* Add more nth-child styles for additional letters as needed */
   .center-section{
     position: relative;
     top: 180px;
