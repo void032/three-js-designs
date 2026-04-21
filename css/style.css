@@ -37,7 +37,18 @@ body {
     text-decoration: none;
     color: #ffffff;
   }
+  .logo a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
   
+  .menu ul li a:focus-visible,
+  .logo a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+  }
+
   .menu ul {
     list-style: none;
     display: flex; 
@@ -50,6 +61,17 @@ body {
   .menu ul li a{
     text-decoration: none;
     color: #ffffff;
+    border-radius: 4px;
+    padding: 2px 4px;
+  }
+  .menu ul li a:focus-visible, .logo a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+  }
+  .item a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+    border-radius: 2px;
   }
   /* Add CSS styles for the animation */
 .logo a {
@@ -82,6 +104,11 @@ body {
   .logo a:focus-visible span {
     animation: showlogoLetters 0.2s ease forwards; /* Play animation on hover and keep the final state */
   }
+
+  .logo a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+  }
   
   /* Staggered animation delay for each span */
   .logo a span:nth-child(1) {
@@ -92,11 +119,6 @@ body {
     animation-delay: 50ms; /* Delay the appearance of the second span by 50ms */
   }
   
-  .logo a span:nth-child(3) {
-    animation-delay: 100ms; /* Delay the appearance of the third span by 100ms */
-  }
-  
-  /* Add more nth-child styles for additional letters as needed */
   
 /* Add CSS styles for the animation */
 .item a {
@@ -129,6 +151,14 @@ body {
   .item a:focus-visible span {
     animation: showLetters 0.2s ease forwards; /* Play animation on hover and keep the final state */
   }
+
+  /* Focus visible state for links */
+  .logo a:focus-visible,
+  .item a:focus-visible {
+    outline: 2px solid #C3F2FF;
+    outline-offset: 4px;
+    border-radius: 4px;
+  }
   
   /* Staggered animation delay for each span */
   .item a span:nth-child(1) {
@@ -144,6 +174,14 @@ body {
   }
   
   /* Add more nth-child styles for additional letters as needed */
+
+  .logo a:focus-visible,
+  .item a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
+
   .center-section{
     position: relative;
     top: 180px;
@@ -188,6 +226,12 @@ body {
   
   .center-text h1::after {
     filter: blur(10px);
+  }
+
+  a:focus-visible {
+    outline: 2px solid #C3F2FF;
+    outline-offset: 4px;
+    border-radius: 2px;
   }
   
   @keyframes rotate {
