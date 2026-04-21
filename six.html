@@ -144,8 +144,13 @@
         
         function wrapCharacters(element) {
           const text = element.innerText;
+          element.setAttribute('aria-label', text);
           const characters = text.split("");
+<<<<<<< HEAD
           const wrappedText = characters.map((char, index) => `<span style="animation-delay: ${index * 50}ms">${char}</span>`).join("");
+=======
+          const wrappedText = characters.map(char => `<span aria-hidden="true">${char}</span>`).join("");
+>>>>>>> pr/10
           element.innerHTML = wrappedText;
         }
         
