@@ -1,3 +1,3 @@
-## 2026-04-19 - [Accessibility of Fragmented Text Animations]
-**Learning:** Text-based animations that split words into individual character spans (like the `wrapCharacters` function in this repo) cause screen readers to read words letter-by-letter, breaking the user experience.
-**Action:** Always set `aria-label` with the full text on the parent element and apply `aria-hidden="true"` to the individual character spans. Pair these animations with `:focus-visible` states to ensure keyboard users have equal visual feedback to hover users.
+## 2025-03-31 - [Keyboard Animation Consistency]
+**Learning:** Animations triggered only on `:hover` exclude keyboard users from the "delightful" parts of the UX. Using `:focus-visible` to trigger the same animations ensures a consistent experience across input methods.
+**Action:** Always pair `:hover` animation triggers with `:focus-visible` to maintain parity between mouse and keyboard interactions.
