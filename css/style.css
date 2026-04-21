@@ -146,9 +146,12 @@ body {
     animation: showLetters 0.2s ease forwards; /* Play animation on hover and keep the final state */
   }
 
+  /* Focus visible state for links */
+  .logo a:focus-visible,
   .item a:focus-visible {
-    outline: 2px solid #ffffff;
+    outline: 2px solid #C3F2FF;
     outline-offset: 4px;
+    border-radius: 4px;
   }
   
   /* Staggered animation delay for each span */
